@@ -6,7 +6,7 @@
 	"dependencies": {
 		"dackson": "~>0.2.1"
 	},
-	"description": "LCU communication",
+	"description": "Simple library to facilitate use of the League of Legends client API.",
 	"libs": [
 		"user32",
 		"kernel32"
