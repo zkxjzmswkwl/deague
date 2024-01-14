@@ -62,3 +62,12 @@ struct SummonerProfile {
     int backgroundSkinId;
     Regalia regalia;
 }
+
+struct SummonerIconPayload {
+    this(int profileIconId) {
+        this.inventoryToken = "string";
+        this.profileIconId = profileIconId;
+    }
+    string inventoryToken;
+    int profileIconId;
+}
