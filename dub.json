@@ -1,0 +1,13 @@
+{
+	"authors": [
+		"carter"
+	],
+	"copyright": "Copyright © 2024, carter",
+	"description": "LCU communication",
+	"license": "MIT",
+	"name": "deague",
+	"libs": [
+		"user32",
+		"kernel32"
+	]
+}

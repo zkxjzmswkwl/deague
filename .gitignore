@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/deague
+deague.so
+deague.dylib
+deague.dll
+deague.a
+deague.lib
+deague-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
