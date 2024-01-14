@@ -1,9 +1,10 @@
 import std.stdio;
-import connector;
+import dackson;
+import leagueclient;
+import types;
 
 void main()
 {
-	auto leagueClient = Connector.connect();
-	writeln(leagueClient.getAppPort());
-	writeln(leagueClient.getAuthToken());
+	auto leagueClient = new LeagueClient();
+	writeln(leagueClient.getCurrentSummoner().gameName);
 }

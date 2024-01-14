@@ -3,11 +3,14 @@
 		"carter"
 	],
 	"copyright": "Copyright © 2024, carter",
+	"dependencies": {
+		"dackson": "~>0.2.1"
+	},
 	"description": "LCU communication",
-	"license": "MIT",
-	"name": "deague",
 	"libs": [
 		"user32",
 		"kernel32"
-	]
+	],
+	"license": "MIT",
+	"name": "deague"
 }
