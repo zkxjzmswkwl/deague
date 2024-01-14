@@ -1,7 +1,5 @@
 import std.stdio;
-import dackson;
 import leagueclient;
-import types;
 
 void main()
 {
