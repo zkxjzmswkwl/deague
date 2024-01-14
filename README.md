@@ -1,3 +1,6 @@
+## Example
+
+```d
 import std.stdio;
 import leagueclient;
 
@@ -9,3 +12,4 @@ void main()
 	writeln(leagueClient.getSummonerProfile());
 	leagueClient.setSummonerIcon(12);
 }
+```
