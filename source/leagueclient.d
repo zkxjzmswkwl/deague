@@ -45,6 +45,12 @@ class LeagueClient {
 	    return decodeJson!(AccountAndSummonerIds)(resp);
     }
 
+    public SummonerProfile* getSummonerProfile() {
+        auto resp = this.request("/lol-summoner/v1/current-summoner/summoner-profile");
+        auto obj = decodeJson!(SummonerProfileRegaliaStr)(resp);
+	    return new SummonerProfile(obj.backgroundSkinId, decodeJson!(Regalia)(obj.regalia));
+    }
+
     public uint getAppPort() {
         return this.appPort;
     }

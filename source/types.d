@@ -30,3 +30,35 @@ struct AccountAndSummonerIds {
     long accountId;
     long summonerId;
 }
+
+// TODO: Dackson doesn't support this shit yet. 
+struct Autofill {
+    struct Entry {
+        bool autoFillEnable;
+        bool autoFillProtectedForPomos;
+        bool autoFillProtectedForStreaking;
+        int queueId;
+    }
+
+    Entry[] queues;
+}
+
+struct Regalia {
+    int bannerType;
+    int crestType;
+    int selectedPrestigeCrest;
+}
+
+struct SummonerProfileRegaliaStr {
+    int backgroundSkinId;
+    string regalia;
+}
+
+struct SummonerProfile {
+    this(int bgId, Regalia regalia) {
+        this.backgroundSkinId = bgId;
+        this.regalia = regalia;
+    }
+    int backgroundSkinId;
+    Regalia regalia;
+}
