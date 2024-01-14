@@ -40,6 +40,11 @@ class LeagueClient {
 	    return decodeJson!(CurrentSummoner)(resp);
     }
 
+    public AccountAndSummonerIds getAccountAndSummonerIds() {
+        auto resp = this.request("/lol-summoner/v1/current-summoner/account-and-summoner-ids");
+	    return decodeJson!(AccountAndSummonerIds)(resp);
+    }
+
     public uint getAppPort() {
         return this.appPort;
     }

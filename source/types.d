@@ -26,3 +26,7 @@ struct CurrentSummoner {
     int xpUntilNextLevel;
 }
 
+struct AccountAndSummonerIds {
+    long accountId;
+    long summonerId;
+}
